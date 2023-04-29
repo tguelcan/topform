@@ -95,6 +95,14 @@ The generator uses the default https://kit.svelte.dev/docs/form-actions approach
 <Form {formData} />
 ```
 
+## Styles
+
+- Input field = form-\* like form-input, form-checkbox, form-radio...
+- Form has "wrapper" class and form-field-wrapper, form-input-wrapper, form-select-wrapper, form-radio-wrapper...
+- Button = form-button
+- Error = form-error
+- Helper = form-helper
+
 ## Status
 
 - [x] Default Input types like, Text, Email...

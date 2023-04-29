@@ -10,7 +10,7 @@
 	{/each}
 	{#each buttons as { content, type }}
 		<div class="button-wrapper">
-			<button {type}>{content}</button>
+			<button {type} class="form-button">{content}</button>
 		</div>
 	{/each}
 </div>
