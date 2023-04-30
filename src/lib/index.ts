@@ -6,8 +6,9 @@ export type FormType = {
 	name: String;
 	title?: String;
 	enhance?: boolean;
+	inner?: boolean;
 	attributes?: object;
 	labels?: object[];
-	elements: object[];
+	elements?: object[];
 	buttons?: object[];
 };

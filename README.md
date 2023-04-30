@@ -15,6 +15,7 @@ The generator uses the default https://kit.svelte.dev/docs/form-actions approach
 		name: 'MyForm',
 		title: 'My Form',
 		enhance: false,
+		inner: false,
 		attributes: { autocomplete: 'off' },
 		elements: [
 			{
@@ -95,6 +96,10 @@ The generator uses the default https://kit.svelte.dev/docs/form-actions approach
 <Form {formData} />
 ```
 
+## Options
+
+- inner (default false). If true, skip the form wrapper. you can use your own.
+
 ## Styles
 
 - Input field = form-\* like form-input, form-checkbox, form-radio...
@@ -102,6 +107,8 @@ The generator uses the default https://kit.svelte.dev/docs/form-actions approach
 - Button = form-button
 - Error = form-error
 - Helper = form-helper
+
+Optional, you can use tailwind with twailwind-forms. It is automatically adapted for this.
 
 ## Status
 

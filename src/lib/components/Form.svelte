@@ -15,6 +15,8 @@
 	<form {method} {...formData.attributes} class="form" use:enhance>
 		<Wrapper {...formData} />
 	</form>
+{:else if formData?.inner}
+	<Wrapper {...formData} />
 {:else}
 	<form {method} {...formData.attributes} class="form">
 		<Wrapper {...formData} />

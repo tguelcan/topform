@@ -5,14 +5,18 @@
 </script>
 
 <div class="wrapper">
-	{#each elements as element}
-		<Input {...element} />
-	{/each}
-	{#each buttons as { content, type }}
-		<div class="button-wrapper">
-			<button {type} class="form-button">{content}</button>
-		</div>
-	{/each}
+	{#if elements}
+		{#each elements as element}
+			<Input {...element} />
+		{/each}
+	{/if}
+	{#if buttons}
+		{#each buttons as { content, type }}
+			<div class="button-wrapper">
+				<button {type} class="form-button">{content}</button>
+			</div>
+		{/each}
+	{/if}
 </div>
 
 <style>

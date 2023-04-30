@@ -6,6 +6,7 @@
 		name: 'MyForm',
 		title: 'My Form',
 		enhance: false,
+		inner: true,
 		attributes: { autocomplete: 'off' },
 		elements: [
 			{
