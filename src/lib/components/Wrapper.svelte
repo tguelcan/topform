@@ -18,12 +18,3 @@
 		{/each}
 	{/if}
 </div>
-
-<style>
-	.wrapper {
-		display: flex;
-		gap: 1em;
-		justify-content: center;
-		flex-direction: column;
-	}
-</style>

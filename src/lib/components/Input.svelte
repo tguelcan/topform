@@ -16,14 +16,14 @@
 </script>
 
 <div class="form-field-wrapper">
-	<!-- LABEL -->
-	{#if label}
-		<label for={id} class="form-label">{label.content}</label>
-	{:else}
-		<label for={id} class="sr-only">{name}</label>
-	{/if}
 	{#if field?.type == 'select'}
 		<div class="form-select-wrapper">
+			<!-- LABEL -->
+			{#if label}
+				<label for={id} class="form-label">{label.content}</label>
+			{:else}
+				<label for={id} class="sr-only">{name}</label>
+			{/if}
 			<!-- SELECT -->
 			<select class="form-select" {name}>
 				{#each field.options as { value, content, attributes }}
@@ -35,6 +35,12 @@
 		</div>
 	{:else if field?.type === 'radio'}
 		<div class="form-radio-wrapper">
+			<!-- LABEL -->
+			{#if label}
+				<label for={id} class="form-label">{label.content}</label>
+			{:else}
+				<label for={id} class="sr-only">{name}</label>
+			{/if}
 			<!-- RADIO -->
 			{#each field.options as { value, content, attributes }, index}
 				<input id={id + index} type="radio" bind:value {...attributes} {name} class="form-radio" />
@@ -47,9 +53,21 @@
 		<div class="form-checkbox-wrapper">
 			<!-- CHECKBOX -->
 			<input {id} use:typeAction bind:value {...field} {name} class="form-checkbox" />
+			<!-- LABEL -->
+			{#if label}
+				<label for={id} class="form-label">{label.content}</label>
+			{:else}
+				<label for={id} class="sr-only">{name}</label>
+			{/if}
 		</div>
 	{:else}
 		<div class="form-input-wrapper">
+			<!-- LABEL -->
+			{#if label}
+				<label for={id} class="form-label">{label.content}</label>
+			{:else}
+				<label for={id} class="sr-only">{name}</label>
+			{/if}
 			<!-- INPUT -->
 			<input {id} use:typeAction bind:value {...field} {name} class="form-input" />
 		</div>
