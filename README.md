@@ -1,4 +1,4 @@
-![TOPFORM](https://raw.githubusercontent.com/tguelcan/topform/master/static/headerfull.png)
+![TOPFORM](https://raw.githubusercontent.com/tguelcan/topform/master/static/coverage.png)
 
 # Svelte TOPFORM
 
