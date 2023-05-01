@@ -53,7 +53,7 @@
 						{ value: 2, content: `What is your mother's name?` },
 						{
 							value: 3,
-							content: `What is another personal fact that an attacker could easily find with Google?`
+							content: 'Your color?'
 						}
 					]
 				}
