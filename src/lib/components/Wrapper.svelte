@@ -4,7 +4,7 @@
 	$: ({ elements, buttons } = $$restProps);
 </script>
 
-<div class="wrapper">
+<div class="form-wrapper">
 	{#if elements}
 		{#each elements as element}
 			<Input {...element} />
