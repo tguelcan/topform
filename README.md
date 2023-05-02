@@ -12,8 +12,8 @@ Everyone is invited to contribute.
 
 ```svelte
 <script lang="ts">
-	import Form from '$lib/index.ts';
-	import type { FormType } from '$lib/index.ts';
+	import Form from 'topform';
+	import type { FormType } from 'topform';
 
 	const formData: FormType = {
 		name: 'SignUp',
